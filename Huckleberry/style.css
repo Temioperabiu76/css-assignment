@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* border: 2px solid green; */
+  font-family: "Lato", sans-serif;
+  line-height: 1.5;
+  height: 100vh;
+}
+
+.hero {
+  /* border: 2px solid green; */
+  background-color: #fff;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 64px;
+  margin-bottom: 50px;
+}
+
+.hero-title {
+  font-weight: 800;
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+
+.hero-text {
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.hero-span {
+  font-weight: 800;
+  color: rgba(0, 153, 102, 1);
+}
+
+.main {
+  position: relative;
+  height: 60%;
+  background-color: rgba(102, 102, 102, 1);
+  border-top: 5px solid rgb(150, 148, 148);
+  padding: 60px 0;
+}
+
+.main-content {
+  position: absolute;
+  background-color: #fff;
+  width: 650px;
+  border-bottom: 5px solid rgb(150, 148, 148);
+  /* margin: 80px; */
+  padding: 64px 20px 24px 24px;
+  margin: 0 200px;
+  text-align: left;
+  font-weight: 500;
+}
+
+.txt-1 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.txt-2 {
+  font-weight: 500;
+}
+
+.txt3-container {
+  /* text-align: center; */
+  width: 300px;
+  background-color: rgba(255, 191, 0, 1);
+  padding: 8px 24px;
+  border-bottom: 5px solid rgb(206, 158, 0);
+  position: absolute;
+  left: 190px;
+  right: 0;
+  bottom: 247px;
+}
+
+.txt-3 {
+  font-weight: 800;
+  font-size: 17px;
+}
+
+/* Responsive screens */
+@media screen and (max-width: 768px) {
+  body {
+    height: 100vh;
+  }
+  .hero {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 64px;
+  }
+
+  .main {
+    position: absolute;
+    border-top: 5px solid rgb(150, 148, 148);
+    /* border: 1px solid blue; */
+    padding: 0;
+    margin: 0;
+    height: 36%;
+    padding: 64px 0;
+  }
+
+  .main-content {
+    position: relative;
+    /* border: 1px solid red; */
+    background-color: #fff;
+    width: 100vw;
+    border-bottom: 5px solid rgb(150, 148, 148);
+    padding: 64px 20px 24px 24px;
+    margin: 0;
+    font-weight: 500;
+  }
+
+  .txt3-container {
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 250px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    height: 41%;
+  }
+
+  .txt3-container {
+    bottom: 300px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    height: 100vh;
+  }
+
+  .hero {
+    margin: 64px 20px;
+  }
+  .main {
+    height: 47%;
+  }
+
+  .main-content {
+    padding: 80px 20px 24px 24px;
+  }
+
+  .txt3-container {
+    bottom: 363px;
+  }
+  .txt-3 {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.1;
+  }
+}
