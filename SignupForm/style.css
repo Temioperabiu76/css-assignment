@@ -1,0 +1,282 @@
+ * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+}
+
+:root {
+  /*-------bg color------*/
+  --main-bg-color: #e3e3e3;
+  --bg-color-1: #ffff;
+  --bg-color2: #2ec4b6;
+
+  /*-------font color-------*/
+  --font-color: #a6a6a6;
+
+  /*---------text colors--------*/
+  --text-color: #000b0a;
+  --text-color2: #737373;
+  --text-color3: #011c34;
+  --text-color4: #ffffff;
+  --text-color5: #000000;
+  --text-color6: #2ec4b6;
+
+  /*---------font family--------*/
+  --font-family-1: "Roboto", sans-serif;
+  --font-family-2: "Sofia Sans Condensed", sans-serif;
+}
+
+body {
+  background: var(--main-bg-color);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main{
+    position: relative;
+}
+
+header {
+  position: absolute;
+  color: #d3d3d3;
+  top: -17px;
+  left: 0;
+  font-family: var(--font-family-1);
+  font-weight: 100;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+header:hover {
+  color: #0084ff;
+}
+
+section {
+  position: relative;
+  width: 1100px;
+  height: 660px;
+  display: flex;
+  background: var(--bg-color-1);
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+.sub-container {
+  width: 391px;
+  font-family: var(--font-family-1);
+  margin-top: 130px;
+}
+
+img {
+  width: 77.33px;
+  height: 80px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.sub-container p {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--text-color2);
+  line-height: 20px;
+}
+
+.sub-container-2 {
+  width: 580px;
+  height: 599px;
+  box-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.1);
+  padding: 25px 30px;
+  font-family: var(--font-family-2);
+}
+
+.flex-container {
+  display: flex;
+  gap: 20px;
+}
+
+label {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #e3e3e3;
+  border-radius: 6px;
+  padding: 0 20px;
+  font-size: 16px;
+  outline-color: #2ec4b6;
+  margin-top: 10px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+input[type="date"] {
+  width: 150%;
+}
+
+.flex4{
+    position: relative;
+}
+
+.flex4 .material-symbols-outlined {
+  position: absolute;
+  top: 52.5%;
+  right: 10px;
+  color: var(--text-color2);
+  font-size: 25px;
+}
+
+select {
+    width: 235px;
+    height: 50px;
+    border: 1px solid #e3e3e3;
+    padding: 0 20px;
+    font-size: 16px;
+    outline-color: #2ec4b6;
+    margin-top: 10px;
+    color: var(--text-color2);
+  }
+
+.flex7 select {
+  width: 100%;
+  color: var(--text-color2);
+}
+
+.flex8 {
+  position: relative;
+}
+
+.flex8 .material-symbols-outlined {
+  position: absolute;
+  top: 55%;
+  right: 10px;
+  color: var(--font-color);
+  font-size: 25px;
+}
+
+.flex9 button{
+    width: 100%;
+    height: 48px;
+    background-color: var(--bg-color2);
+    color: var(--text-color4);
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    margin-top: 10px;
+    letter-spacing: 0.5px;
+}
+
+footer a{
+    text-decoration: underline;
+    color:#2ec4b6;
+}
+
+
+/*-------------media queries----------- */
+@media screen and (min-width: 280px) and (max-width: 768px){
+
+body{
+  background: var(--bg-color-1);
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+  .container{
+  flex-direction: column;
+  width: 270px;
+  height: 920px;
+  max-width: 100%;
+}
+
+.sub-container p{
+  visibility: hidden;
+  max-width: 100%;
+}
+
+.sub-container img{
+  width: 40.67px;
+  height: 40px;
+  margin-left: -10px;
+}
+
+.sub-container::after{
+  content: "Inspiring wholesome harmony for the mind, body and spirit, for everyone, everywhere.";
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  color: (var--text-color2);
+  margin-top: -60px;
+  width: 327px;
+}
+
+.sub-container{
+  margin-bottom: 0;
+  margin-right: 0;
+  margin-bottom: 70px;
+}
+
+.flex-container{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.sub-container-2{
+  width: 327px;
+  height: 870px;
+  margin-top: -50px;
+}
+
+.flex3 select{
+  width: 100%;
+  height: 48px;
+  }
+
+.flex7 select{
+  width: 100%;
+  height: 48px;
+  }
+
+.register{
+  width: 238px;
+  height: 48px;
+  }
+
+footer p{
+  width:55%;
+  margin-top: 10px;
+  margin-left: -225px;
+  margin-bottom: 20px;
+  }
+  
+}
+
